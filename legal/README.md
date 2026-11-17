@@ -33,7 +33,7 @@ ScrapeFun 采用商业软件授权模式。公开 GitHub 仓库提供产品说�
 | 收费托管、向客户交付软件 | 需单独书面授权；另有有效授权的按其约定 |
 | 破解、共享或伪造 Pro 授权 | 不允许；第三方许可与法律规定的独立权利保留 |
 
-商业授权联系 `lihaowei977@gmail.com`；使用及激活问题联系 `scrapefun@outlook.com`。
+商业授权联系 `scrapefun@outlook.com`；使用及激活问题联系 `scrapefun@outlook.com`。
 
 ## 后续发行的协议声明
 

@@ -48,7 +48,7 @@ docker inspect scrapefun \
 如果看到多条 `/app/data/db`、`/app/data/images` 等挂载，不要直接编辑 Compose 后重建。最新版一键脚本会默认停止，并要求显式执行迁移：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh \
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh \
   | bash -s -- ~/scrapefun --migrate-data-root
 ```
 

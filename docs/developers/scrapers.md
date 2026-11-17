@@ -10,7 +10,7 @@
 
 本规范按当前标记为 0.5.1 的开发版本核对，已发布版本的能力可能不同，供用户编写自定义扩展。推荐导出继承 `BaseScraper` 的 TypeScript 类，将其保存为独立的 `.scraper.ts` 文件，在刮削器编辑器中测试后保存。示例是专门编写的扩展模板，不包含产品实现源码。
 
-[电影来源模板](https://github.com/HaoweiLi97/ScrapeFun/blob/main/docs/developers/examples/generic-metadata.scraper.ts)提供搜索、分页、详情和错误处理；[漫画来源模板](https://github.com/HaoweiLi97/ScrapeFun/blob/main/docs/developers/examples/generic-comic.scraper.ts)增加章节与图片页；[清洗模板](https://github.com/HaoweiLi97/ScrapeFun/blob/main/docs/developers/examples/filename-cleaning.js)用于文件名处理。模板使用虚构的 `.example` API，修改域名、请求和字段映射后才能连接真实来源。仅使用获准访问的数据，遵守来源的使用条款和请求频率限制。
+[电影来源模板](https://github.com/ScrapeFun/ScrapeFun/blob/main/docs/developers/examples/generic-metadata.scraper.ts)提供搜索、分页、详情和错误处理；[漫画来源模板](https://github.com/ScrapeFun/ScrapeFun/blob/main/docs/developers/examples/generic-comic.scraper.ts)增加章节与图片页；[清洗模板](https://github.com/ScrapeFun/ScrapeFun/blob/main/docs/developers/examples/filename-cleaning.js)用于文件名处理。模板使用虚构的 `.example` API，修改域名、请求和字段映射后才能连接真实来源。仅使用获准访问的数据，遵守来源的使用条款和请求频率限制。
 
 ```typescript
 import { BaseScraper } from './base.scraper';

@@ -25,14 +25,14 @@ ScrapeFun 将媒体刮削、资源浏览、播放、阅读和多用户管理集�
 | 类型 | 平台 | 公开安装方式 | 入口 |
 | --- | --- | --- | --- |
 | Server | Linux / NAS | Docker，仅支持 `linux/amd64` | [Docker 部署](./DOCKER_GUIDE.md) |
-| Server | Linux | 原生 systemd / amd64 0.6.0 | [安装说明](./DOCKER_GUIDE.md#原生-systemd-安装) · [v0.6.0](https://github.com/HaoweiLi97/scrapefun-server-linux/releases/tag/v0.6.0) |
-| Server | Android | arm64-v8a APK 0.5.10 | [安装说明](https://github.com/HaoweiLi97/scrapefun-server-android) · [稳定版](https://github.com/HaoweiLi97/scrapefun-server-android/releases/tag/v0.5.10) |
-| Server | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 手动下载](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/tag/v0.5.4) |
-| Server | Windows | x64 EXE / Microsoft Store MSIX | [GitHub 下载](https://github.com/HaoweiLi97/scrapefun-server-windows/releases/tag/v0.6.0) · [Microsoft Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
-| Client | Linux | x64 deb / AppImage 0.6.0 | [安装说明](https://github.com/HaoweiLi97/scrapefun-client-linux) · [v0.6.0](https://github.com/HaoweiLi97/scrapefun-client-linux/releases/tag/v0.6.0) |
-| Client | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 手动下载](https://github.com/HaoweiLi97/scrapefun-client-macos/releases/tag/v0.5.4) |
-| Client | Windows | x64 EXE / Microsoft Store APPX | [GitHub 下载](https://github.com/HaoweiLi97/scrapefun-client-windows/releases/tag/v0.6.0) · [Microsoft Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
-| Client | Android | arm64-v8a / armeabi-v7a APK 0.6.0 | [安装说明](https://github.com/HaoweiLi97/scrapefun-client-android) · [稳定版](https://github.com/HaoweiLi97/scrapefun-client-android/releases/tag/v0.6.0) |
+| Server | Linux | 原生 systemd / amd64 0.6.0 | [安装说明](./DOCKER_GUIDE.md#原生-systemd-安装) · [v0.6.0](https://github.com/ScrapeFun/scrapefun-server-linux/releases/tag/v0.6.0) |
+| Server | Android | arm64-v8a APK 0.5.10 | [安装说明](https://github.com/ScrapeFun/scrapefun-server-android) · [稳定版](https://github.com/ScrapeFun/scrapefun-server-android/releases/tag/v0.5.10) |
+| Server | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 手动下载](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.4) |
+| Server | Windows | x64 EXE / Microsoft Store MSIX | [GitHub 下载](https://github.com/ScrapeFun/scrapefun-server-windows/releases/tag/v0.6.0) · [Microsoft Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
+| Client | Linux | x64 deb / AppImage 0.6.0 | [安装说明](https://github.com/ScrapeFun/scrapefun-client-linux) · [v0.6.0](https://github.com/ScrapeFun/scrapefun-client-linux/releases/tag/v0.6.0) |
+| Client | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 手动下载](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.4) |
+| Client | Windows | x64 EXE / Microsoft Store APPX | [GitHub 下载](https://github.com/ScrapeFun/scrapefun-client-windows/releases/tag/v0.6.0) · [Microsoft Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
+| Client | Android | arm64-v8a / armeabi-v7a APK 0.6.0 | [安装说明](https://github.com/ScrapeFun/scrapefun-client-android) · [稳定版](https://github.com/ScrapeFun/scrapefun-client-android/releases/tag/v0.6.0) |
 
 可用架构与包格式以实际 Release 资产和 Docker 标签的镜像清单为准。
 
@@ -43,7 +43,7 @@ Server 0.6.0 提供 Docker、Linux 原生版和 Windows EXE，Client 0.6.0 提�
 在 x86-64 Linux 主机安装 Docker、Docker Compose 插件和 `flock`（通常由 `util-linux` 提供）后，运行：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
 ```
 
 脚本自动检测 GPU 并执行容器预检；可通过 `SCRAPEFUN_GPU_MODE` 显式指定模式。脚本默认使用 `~/scrapefun` 保存部署配置、`~/scrapefun-data` 保存业务数据，并启动 app 与独立 updater。
@@ -138,10 +138,10 @@ volumes:
 
 更新会重启 Server，并中断正在进行的播放和后台任务。先备份，再更新，最后检查登录、媒体库、图片、播放与阅读进度。`latest` 是稳定版频道别名，`beta` 是测试版频道别名；需要固定版本时使用明确的版本标签。
 
-macOS Server [0.5.4](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/tag/v0.5.4) 仅提供 Apple Silicon 版本，需要 macOS 27.0 或更新系统；macOS Client [0.5.4](https://github.com/HaoweiLi97/scrapefun-client-macos/releases/tag/v0.5.4) 面向 Apple Silicon，需要 macOS 26.0 或更新系统。两者均使用 ad-hoc 完整性签名，未经 Developer ID 签名和 Apple 公证；本版请手动下载安装，首次打开按对应 Release 说明解除隔离。
+macOS Server [0.5.4](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.4) 仅提供 Apple Silicon 版本，需要 macOS 27.0 或更新系统；macOS Client [0.5.4](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.4) 面向 Apple Silicon，需要 macOS 26.0 或更新系统。两者均使用 ad-hoc 完整性签名，未经 Developer ID 签名和 Apple 公证；本版请手动下载安装，首次打开按对应 Release 说明解除隔离。
 
 ## 联系与授权
 
-使用问题请通过 [GitHub Issues](https://github.com/HaoweiLi97/ScrapeFun/issues) 或[产品反馈页面](https://scrapefun.com/#/contact)提交。涉及账号、付费或私密日志，请发送至 `scrapefun@outlook.com`；商业合作可联系 `lihaowei977@gmail.com`。
+使用问题请通过 [GitHub Issues](https://github.com/ScrapeFun/ScrapeFun/issues) 或[产品反馈页面](https://scrapefun.com/#/contact)提交。涉及账号、付费、私密日志或商业合作，请联系 `scrapefun@outlook.com`。
 
 软件、文档和第三方组件的授权范围见[许可与协议](./legal/README.md)。

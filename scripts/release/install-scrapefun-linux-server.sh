@@ -142,7 +142,7 @@ if [[ ! -f "$UPDATER_SOURCE" ]]; then
   UPDATER_SOURCE="$stage/linux-native-updater.py"
   command -v curl >/dev/null || fail 'curl is required to download the native updater helper'
   curl -fSL --connect-timeout 15 --max-time 120 --retry 2 \
-    "https://raw.githubusercontent.com/${GITHUB_REPO:-HaoweiLi97/ScrapeFun}/${GITHUB_BRANCH:-main}/scripts/operations/linux-native-updater.py" \
+    "https://raw.githubusercontent.com/${GITHUB_REPO:-ScrapeFun/ScrapeFun}/${GITHUB_BRANCH:-main}/scripts/operations/linux-native-updater.py" \
     -o "$UPDATER_SOURCE" || fail 'could not download the native updater helper; rerun the current one-click installation script'
 fi
 python3 -c 'import ast,sys; ast.parse(open(sys.argv[1]).read())' "$UPDATER_SOURCE"

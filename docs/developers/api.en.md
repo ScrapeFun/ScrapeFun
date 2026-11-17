@@ -10,7 +10,7 @@
 
 These selected native ScrapeFun HTTP APIs were checked against the current development version marked 0.5.1. Released builds may differ; verify your own instance first. This is not an inventory of internal endpoints. Use your deployed Server address, such as `http://127.0.0.1:8096`, rather than the product portal. Use HTTPS for remote connections.
 
-The [OpenAPI description](https://scrapefun.com/developers/openapi.json) is machine readable. [GitHub documentation](https://github.com/HaoweiLi97/ScrapeFun/tree/main/docs/developers) includes Markdown and extension examples. See the separate [scraper authoring](scrapers.en.md) and [testing and management](scraper-api.en.md) guides.
+The [OpenAPI description](https://scrapefun.com/developers/openapi.json) is machine readable. [GitHub documentation](https://github.com/ScrapeFun/ScrapeFun/tree/main/docs/developers) includes Markdown and extension examples. See the separate [scraper authoring](scrapers.en.md) and [testing and management](scraper-api.en.md) guides.
 
 Requests and responses use JSON. Success can return an object, an array, or an empty response; there is no universal `data` wrapper. Keep provider IDs, Server metadata IDs, library IDs, and task IDs distinct. Example domains and IDs are synthetic.
 

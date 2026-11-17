@@ -23,7 +23,7 @@ sudo apt update && sudo apt install -y curl
 点代码块右上角的 **复制代码**，把整条命令粘贴到 Debian 终端，再按回车。首次安装默认使用稳定版和 `8096` 端口。
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash -s -- --install-deps --non-interactive
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash -s -- --install-deps --non-interactive
 ```
 
 `--install-deps` 会安装缺少的依赖，`--non-interactive` 会直接使用默认或已保存的设置。实测中，脚本从 Debian 软件源安装了 FFmpeg 和 FFprobe，并下载和校验了 ScrapeFun 使用的独立 Node.js 22。首次下载依赖和安装包可能需要几分钟。

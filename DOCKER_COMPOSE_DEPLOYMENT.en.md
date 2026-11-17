@@ -128,7 +128,7 @@ services:
       UPDATER_HEALTHCHECK_URL: http://app:8096/health/ready
       UPDATER_STATE_ENV_FILE: /workspace/.updater.env
       UPDATER_SERVER_ENV_FILE: /workspace/server.env
-      UPDATER_SERVER_ENV_SCHEMA_URL: https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/server-env.schema.json
+      UPDATER_SERVER_ENV_SCHEMA_URL: https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/server-env.schema.json
       UPDATER_SERVER_ENV_SCHEMA_CACHE: /workspace/.server-env.schema.json
       UPDATER_STATUS_FILE: /workspace/.updater-status.json
       UPDATER_UPDATE_METADATA_FILE: /workspace/.updater-image-state.json

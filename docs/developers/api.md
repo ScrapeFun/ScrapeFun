@@ -10,7 +10,7 @@
 
 以下为 ScrapeFun 自有 HTTP API 的精选接口，按当前标记为 0.5.1 的开发版本核对；已发布版本的能力可能不同，先在自己的实例验证。本文不构成所有内部接口的清单。API 地址是你部署的 Server，例如 `http://127.0.0.1:8096`，不是产品门户地址。远程连接使用 HTTPS。
 
-[OpenAPI 描述](https://scrapefun.com/developers/openapi.json)可供工具读取。[GitHub 文档](https://github.com/HaoweiLi97/ScrapeFun/tree/main/docs/developers)提供 Markdown 和扩展示例。[刮削器编写](scrapers.md)与[测试和管理](scraper-api.md)另有专篇。
+[OpenAPI 描述](https://scrapefun.com/developers/openapi.json)可供工具读取。[GitHub 文档](https://github.com/ScrapeFun/ScrapeFun/tree/main/docs/developers)提供 Markdown 和扩展示例。[刮削器编写](scrapers.md)与[测试和管理](scraper-api.md)另有专篇。
 
 请求和响应使用 JSON；成功可能返回对象、数组或空响应，不存在统一的 `data` 包装。不要把刮削器的来源 ID、Server 的元数据 ID、媒体库 ID 或任务 ID 混用。本文的示例域名和 ID 都是虚构值。
 

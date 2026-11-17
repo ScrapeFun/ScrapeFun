@@ -84,4 +84,4 @@ For a material breach, the Licensor may, where applicable law and valid contract
 Later agreement versions should identify their version number, publication date, and scope, and be expressly referenced by the relevant new content or distribution. Publishing a new agreement does not automatically relicense earlier content or amend existing contracts or order entitlements.
 
 - Usage, account, and activation support: `scrapefun@outlook.com`
-- Commercial licensing and cooperation: `lihaowei977@gmail.com`
+- Commercial licensing and cooperation: `scrapefun@outlook.com`

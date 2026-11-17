@@ -27,7 +27,7 @@ docker compose version
 ## Install stable
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
 ```
 
 The script creates these default locations:
@@ -40,7 +40,7 @@ The script creates these default locations:
 To set an explicit deployment directory:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable /opt/scrapefun
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable /opt/scrapefun
 ```
 
 The current user needs write access to the destination. Existing environment settings are preserved. New installations generate a login-token secret and an updater token. Do not commit environment files to public repositories.
@@ -61,7 +61,7 @@ Open `http://SERVER_IP:8096` after installation and complete setup. Use the actu
 Example for a non-interactive installation:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | \
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | \
   SCRAPEFUN_GPU_MODE=nvidia bash -s -- stable
 ```
 
@@ -74,7 +74,7 @@ Confirm the host render node exists; set `SCRAPEFUN_DRI_DEVICE=/dev/dri/renderD1
 Back up and pause scanning, scraping, and other write tasks first. Rerun the script to synchronize deployment configuration and update images. Without a channel argument, it preserves the current stable / beta channel, host port, and data directory:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash
 ```
 
 For a one-click deployment using the default directory, you can also update manually:
@@ -94,13 +94,13 @@ For a custom directory, enter that directory first. Ordinary updates do not requ
 Install or switch to beta:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- beta
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- beta
 ```
 
 Explicitly return to stable:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
 ```
 
 Append your custom deployment directory after the channel argument if applicable. Keep app and updater on matching channels. `latest` / `beta` are moving aliases rather than fixed versions. Back up before switching; older versions are not guaranteed to read data written by newer versions.
@@ -139,7 +139,7 @@ For existing installations, upgrade once to native Linux Server 0.5.0 using the 
 Native releases support glibc Linux amd64. Requires running systemd, Node.js 22 (22.13 or later) or 24, Python 3, curl, FFmpeg, and FFprobe. The script downloads a release for the selected channel and verifies SHA-256 without compiling source on the host. It exits if no matching release is available.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash
 # Beta: replace sudo bash with sudo bash -s -- beta
 ```
 

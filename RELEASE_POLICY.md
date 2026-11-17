@@ -8,14 +8,14 @@
 
 | 产品 | 稳定版 | 下载资产 | 发行页 |
 | --- | --- | --- | --- |
-| macOS Server | 0.5.0 | arm64 DMG、SHA-256 / 手动安装 | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/tag/v0.5.0) |
-| Windows Server | 0.5.0 | x64 EXE、更新包、SHA256SUMS；另有商店渠道 | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-windows/releases/tag/v0.5.0) · [商店](https://apps.microsoft.com/detail/9N83B6RSWG01) |
-| Linux Server | 0.5.0 | glibc Linux amd64 原生安装包、SHA256SUMS | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-linux/releases/tag/v0.5.0) |
-| Android Server | 0.5.0 | arm64-v8a 签名 APK、更新清单、SHA256SUMS | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-android/releases/tag/v0.5.0) |
-| Linux Client | 0.5.0 | x64 deb、AppImage、SHA256SUMS | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-client-linux/releases/tag/v0.5.0) |
-| macOS Client | 0.5.0 | arm64 DMG、SHA-256 / 手动安装 | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-client-macos/releases/tag/v0.5.0) |
-| Windows Client | 0.5.0 | x64 EXE、更新文件、SHA256SUMS；另有商店 APPX | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-client-windows/releases/tag/v0.5.0) · [商店](https://apps.microsoft.com/detail/9NM3HPS675QH) |
-| Android Client | 0.5.1 | arm64-v8a / armeabi-v7a APK、SHA256SUMS | [v0.5.1](https://github.com/HaoweiLi97/scrapefun-client-android/releases/tag/v0.5.1) |
+| macOS Server | 0.5.0 | arm64 DMG、SHA-256 / 手动安装 | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.0) |
+| Windows Server | 0.5.0 | x64 EXE、更新包、SHA256SUMS；另有商店渠道 | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-windows/releases/tag/v0.5.0) · [商店](https://apps.microsoft.com/detail/9N83B6RSWG01) |
+| Linux Server | 0.5.0 | glibc Linux amd64 原生安装包、SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-linux/releases/tag/v0.5.0) |
+| Android Server | 0.5.0 | arm64-v8a 签名 APK、更新清单、SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-android/releases/tag/v0.5.0) |
+| Linux Client | 0.5.0 | x64 deb、AppImage、SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-linux/releases/tag/v0.5.0) |
+| macOS Client | 0.5.0 | arm64 DMG、SHA-256 / 手动安装 | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.0) |
+| Windows Client | 0.5.0 | x64 EXE、更新文件、SHA256SUMS；另有商店 APPX | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-windows/releases/tag/v0.5.0) · [商店](https://apps.microsoft.com/detail/9NM3HPS675QH) |
+| Android Client | 0.5.1 | arm64-v8a / armeabi-v7a APK、SHA256SUMS | [v0.5.1](https://github.com/ScrapeFun/scrapefun-client-android/releases/tag/v0.5.1) |
 
 Docker 0.5.0 已发布，稳定版通过 [`haoweil/scrapefun:latest`](https://hub.docker.com/r/haoweil/scrapefun/tags) 分发，测试版通过 `:beta` 分发；updater 使用独立的 `haoweil/scrapefun-updater` 镜像。当前 0.5.0 镜像为 linux/amd64，固定版本使用 `:0.5.0`，app 与 updater 应保持同一版本。
 

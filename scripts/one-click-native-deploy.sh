@@ -198,7 +198,7 @@ download_file() {
   fi
   mv -- "$target.part" "$target"
 }
-source_base="https://raw.githubusercontent.com/${GITHUB_REPO:-HaoweiLi97/ScrapeFun}/${GITHUB_BRANCH:-main}/scripts"
+source_base="https://raw.githubusercontent.com/${GITHUB_REPO:-ScrapeFun/ScrapeFun}/${GITHUB_BRANCH:-main}/scripts"
 mkdir -p "$stage/operations" "$stage/release"
 fetch_script() {
   local relative="$1" target="$stage/$1"
@@ -298,7 +298,7 @@ if [[ -n "${SCRAPEFUN_NATIVE_ARCHIVE:-}" ]]; then
   [[ -f "$archive" && -f "$archive.sha256" ]] || fail 'offline release requires archive and adjacent .sha256'
   checksum="$archive.sha256"
 else
-  release_api="https://api.github.com/repos/${SCRAPEFUN_NATIVE_RELEASE_REPO:-HaoweiLi97/scrapefun-server-linux}/releases"
+  release_api="https://api.github.com/repos/${SCRAPEFUN_NATIVE_RELEASE_REPO:-ScrapeFun/scrapefun-server-linux}/releases"
   printf '查找 %s 发布包…\n' "$CHANNEL"
   if [[ -n "${SCRAPEFUN_NATIVE_VERSION:-}" ]]; then release_api+="/tags/v$SCRAPEFUN_NATIVE_VERSION"
   elif [[ "$CHANNEL" == stable ]]; then release_api+='/latest'; fi
