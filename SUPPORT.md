@@ -8,10 +8,10 @@
 
 | 问题类型 | 入口 |
 | --- | --- |
-| 可公开复现的产品故障、功能建议 | [GitHub Issues](https://github.com/HaoweiLi97/ScrapeFun/issues) |
+| 可公开复现的产品故障、功能建议 | [GitHub Issues](https://github.com/ScrapeFun/ScrapeFun/issues) |
 | 使用与部署问题 | [文档中心](./docs/README.md) · [产品反馈](https://scrapefun.com/#/contact) |
 | 账号、订单、Pro 激活或私密材料 | `scrapefun@outlook.com` |
-| 商业部署、客户交付与合作授权 | `lihaowei977@gmail.com` |
+| 商业部署、客户交付与合作授权 | `scrapefun@outlook.com` |
 | 安全漏洞、凭据泄露 | [安全报告流程](./SECURITY.md) |
 
 公共仓库不约定响应时限、修复期限或 SLA。另有书面支持合同的，以该合同为准。

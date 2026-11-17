@@ -8,7 +8,7 @@
 
 ## Entry points and requirements
 
-Checked against the current development version marked 0.5.1; released builds may have different locations or capabilities. Administrators manage text, voice, and image services under Server Settings → AI Configuration. Metadata translation bindings and behavior are under Scraping & Matching. Check the instance version if an option is absent.
+Checked against the current development version marked 0.5.1; released builds may have different locations or capabilities. Administrators manage text and voice services under Server Settings → Third-Party Integrations. Metadata translation bindings and behavior are under Scraping & Matching. Check the instance version if an option is absent.
 
 Text AI uses a Chat Completions-compatible service. Obtain the endpoint, model ID, and key from your provider; an endpoint implementing another protocol cannot be used directly. Cloud usage and quotas are managed by the provider. External AI authoring extensions against the [scraper contract](scrapers.en.md) does not require configuring built-in text AI first.
 
@@ -16,7 +16,7 @@ Text AI uses a Chat Completions-compatible service. Obtain the endpoint, model I
 
 ## Add a text AI connection
 
-1. Add a connection in the text AI area of AI Configuration.
+1. Add a connection in the text AI area of Third-Party Integrations.
 2. Enter its name, endpoint, API key, and model; enable as needed.
 3. Retrieve models, select or enter a real model ID, then test the connection.
 4. Save, select the connection in the relevant feature, and verify one real request.
@@ -49,7 +49,7 @@ Translation sends the relevant text to the selected provider. Confirm that this 
 
 ## Voice AI and audiobooks
 
-Add a voice connection in AI Configuration, select the protocol matching the service, and fill in these fields. Current options include Audio Speech and Chat Completions Audio. A working text model does not necessarily produce audio.
+Add a voice connection in Third-Party Integrations, select the protocol matching the service, and fill in these fields. Current options include Audio Speech and Chat Completions Audio. A working text model does not necessarily produce audio.
 
 | Setting | Purpose |
 | --- | --- |
@@ -66,7 +66,7 @@ Test a short passage for successful generation, playback, and voice selection be
 
 ## Image enhancement
 
-Select enhancement engines and models in AI Configuration. Device, tile, thread, and output parameters are in Advanced settings. Choose from the capabilities and model list shown by your instance; availability varies with platform, hardware, and model.
+Select enhancement models in the comic reader. Server-side device, tile, thread, and output parameters are in Advanced settings. Model availability varies by platform and hardware.
 
 Image enhancement does not use a text connection's key or model. Test a few comic pages for quality, latency, and resource usage; repeat after changing models. Features requiring product entitlements follow the instance UI.
 

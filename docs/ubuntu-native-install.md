@@ -21,7 +21,7 @@ sudo apt update && sudo apt install -y curl
 点代码块右上角的 **复制代码**，把整条命令粘贴到 Ubuntu 终端，按回车执行。首次安装使用稳定版和 `8096` 端口。
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash -s -- --install-deps --non-interactive
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash -s -- --install-deps --non-interactive
 ```
 
 `--install-deps` 会补齐缺少的依赖。实测中，脚本安装了 FFmpeg 和 FFprobe，并下载、校验了 ScrapeFun 使用的独立 Node.js 22。首次下载依赖和发布包可能需要几分钟。看到「ScrapeFun 原生服务已就绪」后，运行以下命令检查服务。

@@ -8,10 +8,10 @@
 
 | Topic | Contact |
 | --- | --- |
-| Publicly reproducible product bugs and feature requests | [GitHub Issues](https://github.com/HaoweiLi97/ScrapeFun/issues) |
+| Publicly reproducible product bugs and feature requests | [GitHub Issues](https://github.com/ScrapeFun/ScrapeFun/issues) |
 | Usage and deployment | [Documentation](./docs/README.en.md) · [Product feedback](https://scrapefun.com/?lang=en#/contact) |
 | Accounts, orders, Pro activation, and private materials | `scrapefun@outlook.com` |
-| Commercial deployment, customer delivery, and licensing partnerships | `lihaowei977@gmail.com` |
+| Commercial deployment, customer delivery, and licensing partnerships | `scrapefun@outlook.com` |
 | Vulnerabilities and exposed credentials | [Security reporting](./SECURITY.en.md) |
 
 The public repository does not promise response times, repair deadlines, or an SLA. A separate written support contract governs where applicable.

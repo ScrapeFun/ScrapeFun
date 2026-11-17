@@ -9,13 +9,13 @@ Linux 服务端保留两种安装方式，两者提供同一套 Web 管理界面
 Docker 保留现有命令：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash
 ```
 
 原生 systemd：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash
 ```
 
 Beta 在任一命令的末尾使用 `bash -s -- beta`（原生使用 `sudo bash -s -- beta`）。原生脚本会查找对应渠道的正式发布包，下载并检查 SHA-256，再安装运行；不会在用户服务器上编译源码。没有对应架构或渠道的发布包时，在修改现有安装前退出。
@@ -48,7 +48,7 @@ bash scripts/one-click-compose-deploy.sh stable --port 18096
 公网原生命令：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh \
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh \
   | sudo bash -s -- stable --port 18096 --non-interactive
 ```
 

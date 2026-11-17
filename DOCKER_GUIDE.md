@@ -27,7 +27,7 @@ docker compose version
 ## 稳定版安装
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
 ```
 
 脚本默认创建以下位置：
@@ -40,7 +40,7 @@ curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/o
 可显式指定部署目录：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable /opt/scrapefun
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable /opt/scrapefun
 ```
 
 当前用户需要对目标目录有写权限。脚本会保留已有环境设置；全新安装会生成登录令牌密钥和 updater Token。不要把环境文件提交到公开仓库。
@@ -61,7 +61,7 @@ curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/o
 非交互安装示例：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | \
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | \
   SCRAPEFUN_GPU_MODE=nvidia bash -s -- stable
 ```
 
@@ -74,7 +74,7 @@ curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/o
 先备份并暂停扫描、刮削及其他写入任务。重新运行脚本可同步部署配置并更新镜像；不指定频道时保留已有 stable / beta 频道、宿主机端口和数据目录：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash
 ```
 
 默认目录的一键部署也可手动执行：
@@ -94,13 +94,13 @@ docker compose --env-file .updater.env -f docker-compose.remote.yml up -d --remo
 安装或切到 beta：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- beta
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- beta
 ```
 
 明确回到 stable：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
 ```
 
 自定义部署目录需在频道参数后追加该目录。app 和 updater 应使用配套频道；`latest` / `beta` 是会随发布变化的别名，不是固定版本。切换前保存备份，旧版本不保证能读取较新版本写入的数据。
@@ -143,14 +143,14 @@ curl -fsS http://127.0.0.1:8096/health/ready
 原生包支持 glibc Linux amd64，要求运行中的 systemd、Node.js 22（22.13+）或 24、Python 3、curl、FFmpeg 和 FFprobe。脚本下载对应渠道的发布包并校验 SHA-256，不在主机编译源码；没有匹配发布包时退出。
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh | sudo bash
 # Beta：将 sudo bash 换成 sudo bash -s -- beta
 ```
 
 首次终端安装会询问端口，默认 8096。指定端口、补齐基础依赖并无人值守安装：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-native-deploy.sh \
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-native-deploy.sh \
   | sudo bash -s -- stable --port 18096 --install-deps --non-interactive
 ```
 

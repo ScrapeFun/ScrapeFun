@@ -6,7 +6,7 @@
     "description": "Checked 2026-11-03 against the current development version marked 0.5.1. Availability in released builds may differ. This curated subset is not a full route inventory. Use your own Server URL, not the product portal. Additional scraper method contracts and examples are in the linked guides. Response schemas describe useful public fields and allow additional fields; do not infer a universal response wrapper.",
     "license": {
       "name": "ScrapeFun documentation; see repository licensing",
-      "url": "https://github.com/HaoweiLi97/ScrapeFun/blob/main/legal/README.en.md"
+      "url": "https://github.com/ScrapeFun/ScrapeFun/blob/main/legal/README.en.md"
     }
   },
   "servers": [
@@ -27,7 +27,7 @@
   ],
   "externalDocs": {
     "description": "Developer documentation and extension examples",
-    "url": "https://github.com/HaoweiLi97/ScrapeFun/tree/main/docs/developers"
+    "url": "https://github.com/ScrapeFun/ScrapeFun/tree/main/docs/developers"
   },
   "paths": {
     "/api/auth/login": {

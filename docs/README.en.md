@@ -20,8 +20,8 @@ Start with your deployment method. Server manages data and libraries; Client con
 
 ## Platform installation
 
-- Server: [Linux native](../DOCKER_GUIDE.en.md#native-systemd-installation) · [Android](https://github.com/HaoweiLi97/scrapefun-server-android) · [macOS](https://github.com/HaoweiLi97/scrapefun-server-macos/blob/main/README.en.md) · [Windows](https://github.com/HaoweiLi97/scrapefun-server-windows/blob/main/README.en.md)
-- Client: [Linux](https://github.com/HaoweiLi97/scrapefun-client-linux/blob/main/README.en.md) · [macOS](https://github.com/HaoweiLi97/scrapefun-client-macos/blob/main/README.en.md) · [Windows](https://github.com/HaoweiLi97/scrapefun-client-windows/blob/main/README.en.md) · [Android](https://github.com/HaoweiLi97/scrapefun-client-android/blob/main/README.en.md)
+- Server: [Linux native](../DOCKER_GUIDE.en.md#native-systemd-installation) · [Android](https://github.com/ScrapeFun/scrapefun-server-android) · [macOS](https://github.com/ScrapeFun/scrapefun-server-macos/blob/main/README.en.md) · [Windows](https://github.com/ScrapeFun/scrapefun-server-windows/blob/main/README.en.md)
+- Client: [Linux](https://github.com/ScrapeFun/scrapefun-client-linux/blob/main/README.en.md) · [macOS](https://github.com/ScrapeFun/scrapefun-client-macos/blob/main/README.en.md) · [Windows](https://github.com/ScrapeFun/scrapefun-client-windows/blob/main/README.en.md) · [Android](https://github.com/ScrapeFun/scrapefun-client-android/blob/main/README.en.md)
 
 ## Extensions and support
 

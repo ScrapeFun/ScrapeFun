@@ -25,14 +25,14 @@ Deploy a Server first, then install a Client if needed. Server stores libraries,
 | Type | Platform | Published installation format | Links |
 | --- | --- | --- | --- |
 | Server | Linux / NAS | Docker, supports only `linux/amd64` | [Docker deployment](./DOCKER_GUIDE.en.md) |
-| Server | Linux | Native systemd / amd64 0.5.10 | [Installation](./DOCKER_GUIDE.en.md#native-systemd-installation) · [v0.5.10](https://github.com/HaoweiLi97/scrapefun-server-linux/releases/tag/v0.5.10) |
-| Server | Android | arm64-v8a APK 0.5.10 | [Installation](https://github.com/HaoweiLi97/scrapefun-server-android) · [Stable release](https://github.com/HaoweiLi97/scrapefun-server-android/releases/tag/v0.5.10) |
-| Server | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 manual download](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/tag/v0.5.4) |
-| Server | Windows | x64 EXE / Microsoft Store MSIX | [GitHub release](https://github.com/HaoweiLi97/scrapefun-server-windows/releases/tag/v0.5.10) · [Microsoft Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
-| Client | Linux | x64 DEB / AppImage 0.5.10 | [Installation](https://github.com/HaoweiLi97/scrapefun-client-linux) · [v0.5.10](https://github.com/HaoweiLi97/scrapefun-client-linux/releases/tag/v0.5.10) |
-| Client | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 manual download](https://github.com/HaoweiLi97/scrapefun-client-macos/releases/tag/v0.5.4) |
-| Client | Windows | x64 EXE / Microsoft Store APPX | [GitHub release](https://github.com/HaoweiLi97/scrapefun-client-windows/releases/tag/v0.5.10) · [Microsoft Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
-| Client | Android | arm64-v8a / armeabi-v7a APK 0.5.10 | [Installation](https://github.com/HaoweiLi97/scrapefun-client-android/blob/main/README.en.md) · [Stable release](https://github.com/HaoweiLi97/scrapefun-client-android/releases/tag/v0.5.10) |
+| Server | Linux | Native systemd / amd64 0.5.10 | [Installation](./DOCKER_GUIDE.en.md#native-systemd-installation) · [v0.5.10](https://github.com/ScrapeFun/scrapefun-server-linux/releases/tag/v0.5.10) |
+| Server | Android | arm64-v8a APK 0.5.10 | [Installation](https://github.com/ScrapeFun/scrapefun-server-android) · [Stable release](https://github.com/ScrapeFun/scrapefun-server-android/releases/tag/v0.5.10) |
+| Server | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 manual download](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.4) |
+| Server | Windows | x64 EXE / Microsoft Store MSIX | [GitHub release](https://github.com/ScrapeFun/scrapefun-server-windows/releases/tag/v0.5.10) · [Microsoft Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
+| Client | Linux | x64 DEB / AppImage 0.5.10 | [Installation](https://github.com/ScrapeFun/scrapefun-client-linux) · [v0.5.10](https://github.com/ScrapeFun/scrapefun-client-linux/releases/tag/v0.5.10) |
+| Client | macOS | Apple Silicon / arm64 DMG 0.5.4 | [0.5.4 manual download](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.4) |
+| Client | Windows | x64 EXE / Microsoft Store APPX | [GitHub release](https://github.com/ScrapeFun/scrapefun-client-windows/releases/tag/v0.5.10) · [Microsoft Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
+| Client | Android | arm64-v8a / armeabi-v7a APK 0.5.10 | [Installation](https://github.com/ScrapeFun/scrapefun-client-android/blob/main/README.en.md) · [Stable release](https://github.com/ScrapeFun/scrapefun-client-android/releases/tag/v0.5.10) |
 
 Available architectures and formats follow the actual Release Assets and Docker tag manifests.
 
@@ -43,7 +43,7 @@ Server 0.5.10 is available for Docker, Linux, Windows, and Android. Client 0.5.1
 On an x86-64 Linux host, install Docker, the Docker Compose plugin, and `flock` (usually provided by `util-linux`), then run:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh | bash -s -- stable
 ```
 
 The installer automatically detects GPU access and validates it inside the container; set `SCRAPEFUN_GPU_MODE` to choose a mode explicitly. By default, the script stores deployment configuration in `~/scrapefun`, persistent data in `~/scrapefun-data`, and starts app plus a separate updater.
@@ -138,10 +138,10 @@ volumes:
 
 Updating restarts Server and interrupts playback and background tasks. Back up first, update, then check login, libraries, images, and playback and reading progress. `latest` follows stable releases and `beta` follows prereleases; use an explicit version tag when you need a fixed version.
 
-macOS Server [0.5.4](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/tag/v0.5.4) requires Apple Silicon and macOS 27.0 or later; macOS Client [0.5.4](https://github.com/HaoweiLi97/scrapefun-client-macos/releases/tag/v0.5.4) requires Apple Silicon and macOS 26.0 or later. Both use ad-hoc integrity signatures without Developer ID signing or Apple notarization. Install this version manually and follow its Release instructions to remove quarantine if needed.
+macOS Server [0.5.4](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.4) requires Apple Silicon and macOS 27.0 or later; macOS Client [0.5.4](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.4) requires Apple Silicon and macOS 26.0 or later. Both use ad-hoc integrity signatures without Developer ID signing or Apple notarization. Install this version manually and follow its Release instructions to remove quarantine if needed.
 
 ## Contact and licensing
 
-Report public product issues through [GitHub Issues](https://github.com/HaoweiLi97/ScrapeFun/issues) or the [product feedback page](https://scrapefun.com/?lang=en#/contact). For accounts, payments, or private logs, contact `scrapefun@outlook.com`. Commercial inquiries: `lihaowei977@gmail.com`.
+Report public product issues through [GitHub Issues](https://github.com/ScrapeFun/ScrapeFun/issues) or the [product feedback page](https://scrapefun.com/?lang=en#/contact). For accounts, payments, private logs, or commercial inquiries, contact `scrapefun@outlook.com`.
 
 See [licensing and agreements](./legal/README.en.md) for the scope of software, documentation, and third-party component licenses.

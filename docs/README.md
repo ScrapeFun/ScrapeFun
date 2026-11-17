@@ -22,8 +22,8 @@
 
 ## 平台安装
 
-- Server：[Linux 原生](../DOCKER_GUIDE.md#原生-systemd-安装) · [Android](https://github.com/HaoweiLi97/scrapefun-server-android) ·[macOS](https://github.com/HaoweiLi97/scrapefun-server-macos) · [Windows](https://github.com/HaoweiLi97/scrapefun-server-windows)
-- Client：[Linux](https://github.com/HaoweiLi97/scrapefun-client-linux) · [macOS](https://github.com/HaoweiLi97/scrapefun-client-macos) · [Windows](https://github.com/HaoweiLi97/scrapefun-client-windows) · [Android](https://github.com/HaoweiLi97/scrapefun-client-android)
+- Server：[Linux 原生](../DOCKER_GUIDE.md#原生-systemd-安装) · [Android](https://github.com/ScrapeFun/scrapefun-server-android) ·[macOS](https://github.com/ScrapeFun/scrapefun-server-macos) · [Windows](https://github.com/ScrapeFun/scrapefun-server-windows)
+- Client：[Linux](https://github.com/ScrapeFun/scrapefun-client-linux) · [macOS](https://github.com/ScrapeFun/scrapefun-client-macos) · [Windows](https://github.com/ScrapeFun/scrapefun-client-windows) · [Android](https://github.com/ScrapeFun/scrapefun-client-android)
 
 ## 扩展与支持
 

@@ -8,14 +8,14 @@
 
 | Product | Stable version | Download assets | Release |
 | --- | --- | --- | --- |
-| macOS Server | 0.5.0 | arm64 DMG, SHA-256 / manual installation | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-macos/releases/tag/v0.5.0) |
-| Windows Server | 0.5.0 | x64 EXE, update package, SHA256SUMS; Microsoft Store channel | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-windows/releases/tag/v0.5.0) · [Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
-| Linux Server | 0.5.0 | Native glibc Linux amd64 archive, SHA256SUMS | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-linux/releases/tag/v0.5.0) |
-| Android Server | 0.5.0 | Signed arm64-v8a APK, update manifest, SHA256SUMS | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-server-android/releases/tag/v0.5.0) |
-| Linux Client | 0.5.0 | x64 deb, AppImage, SHA256SUMS | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-client-linux/releases/tag/v0.5.0) |
-| macOS Client | 0.5.0 | arm64 DMG, SHA-256 / manual installation | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-client-macos/releases/tag/v0.5.0) |
-| Windows Client | 0.5.0 | x64 EXE, update files, SHA256SUMS; Microsoft Store APPX | [v0.5.0](https://github.com/HaoweiLi97/scrapefun-client-windows/releases/tag/v0.5.0) · [Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
-| Android Client | 0.5.1 | arm64-v8a / armeabi-v7a APKs, SHA256SUMS | [v0.5.1](https://github.com/HaoweiLi97/scrapefun-client-android/releases/tag/v0.5.1) |
+| macOS Server | 0.5.0 | arm64 DMG, SHA-256 / manual installation | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.0) |
+| Windows Server | 0.5.0 | x64 EXE, update package, SHA256SUMS; Microsoft Store channel | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-windows/releases/tag/v0.5.0) · [Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
+| Linux Server | 0.5.0 | Native glibc Linux amd64 archive, SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-linux/releases/tag/v0.5.0) |
+| Android Server | 0.5.0 | Signed arm64-v8a APK, update manifest, SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-android/releases/tag/v0.5.0) |
+| Linux Client | 0.5.0 | x64 deb, AppImage, SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-linux/releases/tag/v0.5.0) |
+| macOS Client | 0.5.0 | arm64 DMG, SHA-256 / manual installation | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.0) |
+| Windows Client | 0.5.0 | x64 EXE, update files, SHA256SUMS; Microsoft Store APPX | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-windows/releases/tag/v0.5.0) · [Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
+| Android Client | 0.5.1 | arm64-v8a / armeabi-v7a APKs, SHA256SUMS | [v0.5.1](https://github.com/ScrapeFun/scrapefun-client-android/releases/tag/v0.5.1) |
 
 Docker 0.5.0 is published through [`haoweil/scrapefun:latest`](https://hub.docker.com/r/haoweil/scrapefun/tags); prereleases use `:beta`. The updater uses `haoweil/scrapefun-updater`. The 0.5.0 images target linux/amd64. Use `:0.5.0` to pin the version and keep app and updater on the same version.
 

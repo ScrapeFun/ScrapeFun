@@ -33,7 +33,7 @@ Check the license, copyright notices, and release information for each platform 
 | Paid hosting or delivery to customers | Separate written authorization is required, unless otherwise covered by a valid license |
 | Cracking, unauthorized sharing, or forging Pro entitlements | Prohibited; independent third-party license rights and statutory rights are preserved |
 
-Commercial licensing: `lihaowei977@gmail.com`. Usage and activation support: `scrapefun@outlook.com`.
+Commercial licensing: `scrapefun@outlook.com`. Usage and activation support: `scrapefun@outlook.com`.
 
 ## Statements in later distributions
 

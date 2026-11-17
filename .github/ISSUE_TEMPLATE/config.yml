@@ -10,8 +10,8 @@ contact_links:
     url: https://scrapefun.com/#/contact
     about: 联系 scrapefun@outlook.com，请勿公开激活码。Contact by email; keep activation codes private.
   - name: 安全漏洞报告 / Security reporting
-    url: https://github.com/HaoweiLi97/ScrapeFun/blob/main/SECURITY.md
+    url: https://github.com/ScrapeFun/ScrapeFun/blob/main/SECURITY.md
     about: 按安全说明私密报告漏洞。Report vulnerabilities privately using the security instructions.
   - name: Security reporting (English)
-    url: https://github.com/HaoweiLi97/ScrapeFun/blob/main/SECURITY.en.md
+    url: https://github.com/ScrapeFun/ScrapeFun/blob/main/SECURITY.en.md
     about: Private reporting instructions for vulnerabilities and exposed credentials.

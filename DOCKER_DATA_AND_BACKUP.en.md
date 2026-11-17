@@ -46,7 +46,7 @@ docker inspect scrapefun \
 If multiple mounts such as `/app/data/db` and `/app/data/images` appear, do not edit Compose and recreate the container directly. The current one-click script stops by default and requires explicit migration:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/HaoweiLi97/ScrapeFun/main/scripts/one-click-compose-deploy.sh \
+curl -fsSL https://raw.githubusercontent.com/ScrapeFun/ScrapeFun/main/scripts/one-click-compose-deploy.sh \
   | bash -s -- ~/scrapefun --migrate-data-root
 ```
 

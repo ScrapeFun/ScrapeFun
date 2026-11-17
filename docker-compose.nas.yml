@@ -12,6 +12,8 @@ services:
     restart: unless-stopped
     ports:
       - "8096:8096"
+      - "19097:19097/udp"
+      - "19098:19098/udp"
     environment:
       NODE_ENV: production
       PORT: 8096

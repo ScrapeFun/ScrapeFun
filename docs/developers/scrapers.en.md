@@ -10,7 +10,7 @@
 
 This user extension contract was checked against the current development version marked 0.5.1; released builds may differ. Export a TypeScript class extending `BaseScraper`, save it as a separate `.scraper.ts` file, and test it in the scraper editor before saving. Examples are purpose-written extension templates and contain no product implementation source.
 
-The [movie source template](https://github.com/HaoweiLi97/ScrapeFun/blob/main/docs/developers/examples/generic-metadata.scraper.ts) covers search, pagination, details, and errors. The [comic source template](https://github.com/HaoweiLi97/ScrapeFun/blob/main/docs/developers/examples/generic-comic.scraper.ts) adds chapters and image pages. The [cleaning template](https://github.com/HaoweiLi97/ScrapeFun/blob/main/docs/developers/examples/filename-cleaning.js) handles filenames. Templates target synthetic `.example` APIs; adapt endpoints, requests, and field mappings before contacting a real provider. Access only authorized data and respect provider terms and rate limits.
+The [movie source template](https://github.com/ScrapeFun/ScrapeFun/blob/main/docs/developers/examples/generic-metadata.scraper.ts) covers search, pagination, details, and errors. The [comic source template](https://github.com/ScrapeFun/ScrapeFun/blob/main/docs/developers/examples/generic-comic.scraper.ts) adds chapters and image pages. The [cleaning template](https://github.com/ScrapeFun/ScrapeFun/blob/main/docs/developers/examples/filename-cleaning.js) handles filenames. Templates target synthetic `.example` APIs; adapt endpoints, requests, and field mappings before contacting a real provider. Access only authorized data and respect provider terms and rate limits.
 
 ```typescript
 import { BaseScraper } from './base.scraper';
