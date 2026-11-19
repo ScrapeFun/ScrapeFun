@@ -9,17 +9,17 @@
 | 产品 | 稳定版 | 下载资产 | 发行页 |
 | --- | --- | --- | --- |
 | macOS Server | 0.5.0 | arm64 DMG、SHA-256 / 手动安装 | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-macos/releases/tag/v0.5.0) |
-| Windows Server | 0.5.0 | x64 EXE、更新包、SHA256SUMS；另有商店渠道 | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-windows/releases/tag/v0.5.0) · [商店](https://apps.microsoft.com/detail/9N83B6RSWG01) |
+| Windows Server | 以商店为准 | x64 MSIX | [Microsoft Store](https://apps.microsoft.com/detail/9N83B6RSWG01) |
 | Linux Server | 0.5.0 | glibc Linux amd64 原生安装包、SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-linux/releases/tag/v0.5.0) |
 | Android Server | 0.5.0 | arm64-v8a 签名 APK、更新清单、SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-server-android/releases/tag/v0.5.0) |
 | Linux Client | 0.5.0 | x64 deb、AppImage、SHA256SUMS | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-linux/releases/tag/v0.5.0) |
 | macOS Client | 0.5.0 | arm64 DMG、SHA-256 / 手动安装 | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-macos/releases/tag/v0.5.0) |
-| Windows Client | 0.5.0 | x64 EXE、更新文件、SHA256SUMS；另有商店 APPX | [v0.5.0](https://github.com/ScrapeFun/scrapefun-client-windows/releases/tag/v0.5.0) · [商店](https://apps.microsoft.com/detail/9NM3HPS675QH) |
+| Windows Client | 以商店为准 | x64 APPX | [Microsoft Store](https://apps.microsoft.com/detail/9NM3HPS675QH) |
 | Android Client | 0.5.1 | arm64-v8a / armeabi-v7a APK、SHA256SUMS | [v0.5.1](https://github.com/ScrapeFun/scrapefun-client-android/releases/tag/v0.5.1) |
 
 Docker 0.5.0 已发布，稳定版通过 [`haoweil/scrapefun:latest`](https://hub.docker.com/r/haoweil/scrapefun/tags) 分发，测试版通过 `:beta` 分发；updater 使用独立的 `haoweil/scrapefun-updater` 镜像。当前 0.5.0 镜像为 linux/amd64，固定版本使用 `:0.5.0`，app 与 updater 应保持同一版本。
 
-Windows GitHub 发行提供 x64 EXE 安装包和自动更新文件；Microsoft Store 继续作为独立 APPX/MSIX 渠道，可用版本以商店为准。GitHub EXE 未签名，Windows 可能显示未知发布者提示，请用 SHA256SUMS 核对下载。可继续使用原安装渠道，切换渠道前请备份数据。
+Windows 客户端和服务端均通过 Microsoft Store 安装和更新。旧 EXE 用户切换前请先备份，安装商店版后恢复。
 
 macOS Server 0.5.0 需要 Apple Silicon / macOS 27.0 或更新系统，Client 0.5.0 需要 Apple Silicon / macOS 26.5 或更新系统。两者采用 ad-hoc 完整性签名，未经 Developer ID 签名和 Apple 公证；本版只提供手动下载安装，不提供应用内自动升级，首次安装按各自 Release 说明操作。
 
@@ -41,10 +41,11 @@ Linux 原生 Server 0.5.0 支持网页安装更新。从旧版升级时，先重
 | Docker 一键部署 | 应用内 updater 或重跑一键脚本；不指定频道时保留现有频道 |
 | NAS 手动 Compose | 更新镜像并重建服务；app 与 updater 频道保持一致 |
 | macOS Server | 0.5.0 手动下载 DMG 并替换应用；先备份并退出旧服务 |
-| Windows Server | GitHub EXE 使用内置更新，商店安装由 Microsoft Store 更新；切换渠道前请备份 |
+| Windows Server | Microsoft Store |
 | Linux AppImage Client | AppImage 更新，或手动下载替换 |
 | Linux deb Client | 使用系统包管理器安装新版包 |
-| macOS / Windows Client | macOS 0.5.0 手动覆盖安装；Windows 继续使用原安装渠道的更新方式 |
+| macOS Client | macOS 0.5.0 手动覆盖安装 |
+| Windows Client | Microsoft Store |
 | Android Client | 应用校验更新信息后交由系统安装器安装，或手动安装同签名新版 APK |
 
 ## 升级与兼容性
