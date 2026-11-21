@@ -1,0 +1,13 @@
+# ScrapeFun 0.7.0
+
+This update improves task management, library workflows, and account connections.
+
+## Improvements
+
+- Improved the task center, task recovery, and retrying failed tasks.
+- Improved library navigation, settings, and media workflows.
+- Improved account linking and connection recovery.
+
+## Before updating
+
+- The update restarts the server. Back up your data and configuration first.
