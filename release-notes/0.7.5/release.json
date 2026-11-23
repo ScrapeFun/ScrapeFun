@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "0.7.5",
+  "channel": "stable",
+  "releaseDate": "2026-11-23",
+  "targetPlatforms": [
+    "docker"
+  ],
+  "restartRequired": true,
+  "minimumVersion": null,
+  "notes": {
+    "zh-CN": "zh-CN.md",
+    "en-US": "en-US.md"
+  }
+}
